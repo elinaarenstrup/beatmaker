@@ -33,6 +33,16 @@ svg {
   background: #deb5ee;
 }
 
+.kick-pad.active {
+  background: #5e5ecc;
+}
+.snare-pad.active {
+  background: #5acabf;
+}
+.hihat-pad.active {
+  background: #aa67c5;
+}
+
 .sequencer {
   display: flex;
   min-height: 100vh;
@@ -40,7 +50,6 @@ svg {
   align-items: center;
   justify-content: center;
 }
-/* #5e5ecc #5acabf #aa67c5*/
 
 .kick-track,
 .snare-track,
@@ -56,4 +65,41 @@ svg {
 .snare,
 .hihat {
   display: flex;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  margin: 0rem 2rem;
+}
+
+.controls button {
+  padding: 1rem;
+  border: none;
+  background: #494949;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.pad {
+  transition: all 0.5s ease;
+}
+
+.play {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background: #494949;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+select {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.5rem;
 }
