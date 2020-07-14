@@ -78,7 +78,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 70%;
+  width: 100%;
   margin-top: 5rem;
 }
 
@@ -99,7 +99,7 @@ h2 {
 .controls button {
   padding: 1rem;
   border: none;
-  background: #959698;
+  background: none;
   color: white;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -114,16 +114,21 @@ h2 {
   font-size: 1.5rem;
   font-weight: lighter;
   text-transform: uppercase;
-  background: #959698;
+  background: none;
   color: white;
-  border: none;
+  border: 0.1rem solid white;
+  border-radius: 1rem;
   cursor: pointer;
   margin-top: 2rem;
 }
 
+.play:hover {
+  background: #bbbbbb;
+}
+
 select {
   text-transform: uppercase;
-  background: #959698;
+  background: none;
   color: white;
   padding: 0.7rem;
   margin: 1rem;
@@ -132,11 +137,6 @@ select {
   border: none;
 }
 
-.mute.active {
-  color: white;
-  background: none;
-}
-
 .tempo {
   margin: 3rem;
   width: 30%;
@@ -160,29 +160,8 @@ select {
 }
 
 .mute.active {
-  background: #bbbbbb;
-}
-
-.tempo {
-  margin: 3rem;
-  width: 30%;
-}
-
-.tempo-slider {
-  padding: 0.2rem;
-  -webkit-appearance: none;
-  margin: 1rem 0rem;
-  width: 100%;
-  position: relative;
-  background: #585858;
-  cursor: pointer;
-  border-radius: 1rem;
-}
-
-.tempo p {
-  font-size: 1.5rem;
-  margin: 2rem;
-  text-align: center;
+  color: white;
+  background: none;
 }
 
 @keyframes playTrack {
