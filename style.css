@@ -1,4 +1,5 @@
 * {
+  background: #23272a;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,10 +14,30 @@ svg {
   pointer-events: none;
 }
 
+h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin: 5rem 0;
+}
+
+h1 span {
+  font-weight: lighter;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin: 5rem 0;
+}
+
 .kick-pad,
 .snare-pad,
 .hihat-pad {
-  border-radius: 50%;
   width: 5rem;
   height: 5rem;
   margin: 1rem 0.5rem;
@@ -24,13 +45,13 @@ svg {
 }
 
 .kick-pad {
-  background: #a8a8e0;
+  background: #3e4245;
 }
 .snare-pad {
-  background: #aee2dd;
+  background: #3e4245;
 }
 .hihat-pad {
-  background: #deb5ee;
+  background: #3e4245;
 }
 
 .kick-pad.active {
@@ -78,7 +99,7 @@ svg {
 .controls button {
   padding: 1rem;
   border: none;
-  background: #494949;
+  background: #959698;
   color: white;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -91,7 +112,9 @@ svg {
 .play {
   padding: 1rem 2rem;
   font-size: 1.5rem;
-  background: #494949;
+  font-weight: lighter;
+  text-transform: uppercase;
+  background: #959698;
   color: white;
   border: none;
   cursor: pointer;
@@ -99,9 +122,41 @@ svg {
 }
 
 select {
-  padding: 1rem;
+  text-transform: uppercase;
+  background: #959698;
+  color: white;
+  padding: 0.7rem;
   margin: 1rem;
   font-size: 1.5rem;
+  font-weight: lighter;
+  border: none;
+}
+
+.mute.active {
+  color: white;
+  background: none;
+}
+
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.tempo-slider {
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background: #959698;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.tempo p {
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: center;
 }
 
 @keyframes playTrack {
