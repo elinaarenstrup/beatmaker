@@ -35,6 +35,13 @@ h2 {
   margin: 5rem 0;
 }
 
+h3 {
+  color: #bbbbbb;
+  font-size: 1rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
 .kick-pad,
 .snare-pad,
 .hihat-pad {
@@ -188,6 +195,14 @@ select {
 .mute.active {
   color: #f76f6f;
   background: none;
+}
+
+footer {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes playTrack {
